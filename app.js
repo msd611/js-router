@@ -6,6 +6,8 @@ const PORT = process.env.PORT || 1234;
 
 app.use(express.static("public"));
 
+app.use(require("./routes"));
+
 app.listen(PORT, () => {
   console.log(`server started at ${PORT}`);
 });
